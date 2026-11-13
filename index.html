@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + JohnDoe main styles -->
 	<link rel="stylesheet" href="assets/css/johndoe.css">
+    <!-- Sleek theme (sections below the header) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="assets/css/sleek.css">
     
     <meta name="google-site-verification" content="cutIyhXucQHK9jiRkvp6GGnA6RUOnC_GPtBJBgXk-a0" />
 </head>
@@ -76,41 +81,28 @@
         </div>
     </nav>
     <div class="container-fluid">
-        <div id="about" class="row about-section" style="overflow:hidden;">
-            <div class="container" style="width:70%; float: left;">
+        <div id="about" class="row about-section">
+          <div class="container about-grid">
+            <div class="about-text">
                 <h1 class="font-weight-light">About <span class="text-danger">me</span></h1>
                 <span class="line mb-5"></span>
-                <h5 class="mb-3">I am a NASA Hubble Fellow at Columbia University and a guest researcher at
-                    the Center for Computational Astrophysics. Previously, I was a PhD student in the
-                    Astrophysics Department at Caltech.
+                <h5 class="mb-3">I am a NASA Hubble Fellow at Columbia University. I finished my PhD from the
+                    Astrophysics Department at Caltech in 2025. I received my Bachelors degree from the Indian Institute of Technology Bombay in 2019.
                 </h5>
-                <h5 class="mt-20">My field of research is time-domain and multi-messenger astronomy - the
-                    study of our dynamic sky.<br> <br>
-                    I am currently studying unusual cosmic explosions,
-                    stars that show unusual variations in their brightness and
-                     hunting for light from gravitational waves. <br> <br>
-                    I use robotic telescopes that survey the sky at the visual and
-                    infrared wavelengths to look for such stars and explosions. Once
-                    identified, I use some of the largest telescopes in the world to
-                    study them in more detail. I also work on developing software to
-                    enable discoveries of such phenomena. My PhD advisor is Prof.
-                    <a href="https://sites.astro.caltech.edu/~mansi/">Mansi
-                    Kasliwal </a>. <br> <br>
+                <h5 class="mt-20">My work focuses on the study of our dynamic sky. 
+                    I study unusual cosmic explosions,
+                    stars that show unusual brightness variations and
+                    hunt for light accompanying gravitational waves. <br> <br>
+                    I use robotic telescopes that survey the sky, preferably at
+                    infrared wavelengths, to look for such stars and explosions. 
                 </h5>
             </div>
-            <div class="container" style="width:30%; float: right;">
-                <img src="assets/imgs/viraj_headshot.jpg" width="90%">
-                <!--<h5 class="mt-20">Before coming to Caltech, I got my Bachelors degree
-                    in Engineering Physics with a minor in Mathematics in 2019
-                    at the Indian Institute of Technology Bombay.
-                    During my undergrad, I worked on roboticizing the GROWTH-India
-                    telescope, coming up with a theoretical model to explain the
-                    anomalous EDGES 21 cm signal, played a lot of badminton,
-                    and acted in a few plays.
-                </h5> -->
+            <div class="about-photo">
+                <img src="assets/imgs/viraj_headshot.jpg" alt="Viraj Karambelkar">
 
                 <!--<button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i>Download My CV</button>-->
             </div>
+          </div>
 
         </div>
     </div>
@@ -280,38 +272,29 @@
             <h1 class="font-weight-light">Research <span class="text-danger">Description</span></h1>
             <span class="line mb-5"></span>
             <div class="about-card">
-                <h5> For my work, I make use of all three time-domain surveys that operate out of
-                the Palomar Observatory - </h5>
-
-                <ol>
-                    <hr>
-                    <li> <h5><b>The Zwicky Transient Facility (ZTF)</b></h5>
-                        <h5>The ZTF camera is mounted
-                        on a 1.2m telescope, has a whopping field-of-view (FOV) of 47 sq. deg.
-                        and has been surveying the entire northern sky every couple days since
-                        2018 in the g,r,i bands to a depth of 20.5 mag.</h5>
-                    <hr>
-                    </li>
-                    <li> <h5><b>Palomar Gattini IR (PGIR) </b></h5>
-                        <h5>PGIR is a 30 cm. J-band detector
-                    with a 25 sq. deg. FOV and has been surveying the northern sky at a few day cadence
-                            to a depth of J = 15 mag since 2019.</h5>
-                    </li>
-                    <hr>
-
-                    <li> <h5> <b>The Wide-field Infrared Transient Explorer (WINTER)</b></h5>
-                        <h5>WINTER is a new IR surveyor on a 1 m telescope with a 1 sq. deg. FOV.
-                    WINTER had first light in June 2023 and will conduct a time-domain survey
-                        of the northern sky to J = 20 mag. Developing the data processing
-                    pipeline for WINTER is a major part of my thesis.</h5>
-                    </li>
-                    <hr>
-                </ol>
-                <h5> I use these surveys to work on the following scientific areas :-
-                </h5>
+                <h5> I use survey telescopes across the world and in space, such as WINTER, NEOWISE, SPHEREx, PGIR, ZTF. I have worked on the following scientific areas:- </h5>
                 <br>
             </div>
             <div class="row">
+                <!-- blog-card -->
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/stellar_mergers.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title"><b>Stellar Mergers and Common-Envelope Evolution</b></h6>
+                        <h6>I am currently most focused on understanding transients from common-envelope evolution. 
+                            Luminous Red Novae (LRNe) are transients associated with the
+                            final stages of common-envelope evolution in stellar binaries -
+                            a stellar merger or common-envelope ejection. LRNe have low
+                            intrinsic luminosities, making them observationally rare. I study
+                            these transients using ZTF, WINTER, NEOWISE, and JWST.
+                        </h6>
+
+                    </div>
+                </div><!-- end of blog wrapper -->
+
+                <!-- blog-card -->
                 <div class="blog-card">
                     <div class="img-holder">
                         <img src="assets/imgs/emgw.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
@@ -324,49 +307,6 @@
                             wave alerts detected by the LIGO collaboration to search for their
                             electromagnetic counterparts - the elusive kilonovae.
                         </h6>
-
-                        <h6> ZTF's large FOV is well-suited to search for the
-                            fast-fading kilonovae associated with binary
-                            neutron star or neutron star-black hole mergers. ZTF
-                            conducted GW followup campaigns during LIGO-O3
-                            (<a href="https://ui.adsabs.harvard.edu/abs/2020ApJ...905..145K/abstract" target="_blank">paper</a>),
-                            and will continue to do so during the LIGO's
-                            ongoing O4 observing run. <br><br>
-                            WINTER's NIR sensitivity is well-suited to search for kilonovae,
-                            as they are expected to be brighter and longer-lasting
-                            at infrared wavelengths. Using realistic GW simulations,
-                            we found that WINTER is capable of efficiently
-                            searching for kilonovae during LIGO O4
-                            (<a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...926..152F/abstract" target="_blank">paper</a>).
-                        </h6>
-                    </div>
-                </div><!-- end of blog wrapper -->
-
-                <!-- blog-card -->
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/stellar_mergers.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="content-holder">
-                        <h6 class="title"><b>Stellar Mergers and Common-Envelope Evolution</b></h6>
-                        <h6>Luminous Red Novae (LRNe) are transients associated with the
-                            final stages of common-envelope evolution in stellar binaries -
-                            a stellar merger or common-envelope ejection. LRNe have low
-                            intrinsic luminosities, making them observationally rare. <br>
-                            <br>
-                            I use a systematic, volume-limited survey of transients discovered
-                            by ZTF to search for LRNe and study their demographics.
-                            With ZTF, we constructed the first systematic sample of LRNe
-                            and constrained their rates and luminosity function
-                            (<a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...948..137K/abstract" target="_blank">paper</a>). <br>
-                            <br>
-                            I am now searching for LRNe using WINTER, to uncover the
-                            dustiest stellar mergers that are being missed by optical
-                            telescopes like ZTF. I also led an approved program on JWST
-                            to conduct mid-IR observations of LRNe during Cycle 2
-                            to study their dust properties.
-                        </h6>
-
                     </div>
                 </div><!-- end of blog wrapper -->
 
@@ -376,24 +316,10 @@
                         <img src="assets/imgs/RCB.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                     </div>
                     <div class="content-holder">
-                        <h6 class="title"><b>R-Coronae-Borealis stars - Remnants of
-                            low-mass white-dwarf mergers</b> </h6>
+                        <h6 class="title"><b>Dusty Variable stars </b> </h6>
 
-                        <h6>The remnants of low-mass white dwarf (WD) mergers are
-                            expected to spend a significant part of their lives as
-                            puffed-up supergiant stars. R-Coronae Borealis (RCB)
-                            stars are an enigmatic class of supergiants that have
-                            chemical compositions consistent with being WD merger
-                            remnants. Adding to their mystery, RCB stars show rapid
-                            brightness declines due to dust-formation around them.<br><br>
-                            I am conducting a systematic infrared search for RCB stars
-                            using the PGIR. I use PGIR
-                            infrared lightcurves of millions of stars to identify those
-                            showing RCB-like erratic variations in their lightcurves. I then
-                            use NIR spectroscopy to confirm their nature
-                            (<a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...910..132K/abstract" target="_blank">paper</a>). I also
-                            use the spectra to study the chemical abundances of RCB
-                            stars (<a href="https://ui.adsabs.harvard.edu/abs/2022A%26A...667A..84K/abstract" target="_blank">paper</a>).
+                        <h6>Using PGIR and more recently SPHEREx, I search for dusty variable stars in the Milky Way. 
+                            This includes dusty AGB stars, R Coronae Borealis stars, symbiotic binaries, carbon stars, and young stellar objects.
                         </h6>
 
                     </div>
@@ -405,23 +331,10 @@
                         <img src="assets/imgs/colliding_white_dwarfs.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                     </div>
                     <div class="content-holder">
-                        <h5 class="title"><b>Low luminosity type Iax supernovae</b></h5>
+                        <h5 class="title"><b>Unusual low luminosity explosions</b></h5>
                         <br>
                         <br>
-                        <h6>
-                            Type Iax supernovae (SNe Iax) are a peculiar class of thermonuclear supernovae, that are
-                            thought to be the result of the partial deflagration of a white dwarf (WD) accreting from a companion.
-                            There is a sub-population of SNe Iax that are intrinsically fainter than the rest and cannot be explained
-                            by the standard WD deflagration model. <br><br>
-
-                            With ZTF, we discovered the lowest luminosity SN Iax to date, SN 2021fcg
-                            (<a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...921L...6K/abstract" target="_blank">paper</a>).
-                            This SN had a peak
-                            absolute magnitude of a mere -12.5 mag and could not be explained by the standard WD deflagration model.
-                            A promising alternative model was the merger of an ONe WD with a CO WD. <br><br>
-
-                            I am now accumulating a systematic sample of low luminosity SNe Iax using ZTF. I also led a successful HST proposal
-                            to observe SN 2021fcg to search for its remnant, and constrain its progenitor system.
+                        <h6> I am interested in odd-ball, subluminous explosions, such as low luminosity Type Iax supernovae and Intermediate luminosity red transients. I use ZTF, WINTER and JWST to study these explosions. <br><br>
                         </h6>
 
                     </div>
@@ -520,6 +433,8 @@
 
     <!-- JohnDoe js -->
     <script src="assets/js/johndoe.js"></script>
+    <!-- Scroll reveal -->
+    <script src="assets/js/reveal.js"></script>
 
 </body>
 </html>
