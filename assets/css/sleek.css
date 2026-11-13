@@ -243,3 +243,32 @@ hr { border-top-color: rgba(255, 255, 255, .08); }
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; filter: none; transition: none; }
 }
+
+/* ---------- Landing page: mobile fixes (desktop unchanged) ---------- */
+@media (max-width: 767.98px), (hover: none) and (pointer: coarse) {
+  .header {
+    /* iOS Safari can't do fixed backgrounds; it zooms the image to page height */
+    background-attachment: scroll;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../imgs/header_mobile.jpg);
+  }
+}
+@media (max-width: 767.98px) {
+  .header {
+    height: 100vh;
+    height: 100svh;
+    min-height: 520px;
+  }
+  .header .header-content .header-title {
+    font-size: clamp(2.4rem, 11vw, 3.6rem);
+    line-height: 1.05;
+    overflow-wrap: break-word;
+  }
+  .header .header-content .header-mono {
+    margin-bottom: 18px;
+  }
+  .about-grid .about-photo {
+    flex: none;
+    width: 70%;
+    max-width: 320px;
+  }
+}
